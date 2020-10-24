@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tugas Widget View</string>
+    <string name="npm">NPM :</string>
+    <string name="pendaftaran_panitia_pensi_2020">PENDAFTARAN PANITIA PENSI 2020</string>
+    <string name="nama">Nama :</string>
+    <string name="divisi">Divisi :</string>
+    <string name="angkatan">Angkatan :</string>
+    <string name="_2018">2018</string>
+    <string name="_2019">2019</string>
+    <string name="acara">Acara</string>
+    <string name="_2020">2020</string>
+    <string name="pdd">PDD</string>
+    <string name="humas">Humas</string>
+    <string name="name">Name</string>
+    <string name="cancel_data">Cancel data</string>
+    <string name="kirim_data">kirim data</string>
+</resources>

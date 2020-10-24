@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0BA4E8"
+    android:backgroundTint="#884E4E50"
+    android:backgroundTintMode="multiply"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="#EE2D397C"
+        android:text="@string/pendaftaran_panitia_pensi_2020"
+        android:textAlignment="center"
+        android:textColor="#EEFF41"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/nama"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNPM"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/npm"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNama" />
+
+    <TextView
+        android:id="@+id/txtAngkatan"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/angkatan"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNPM" />
+
+    <TextView
+        android:id="@+id/txtDivisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/divisi"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAngkatan" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNama"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editNPM"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNPM"
+        app:layout_constraintTop_toBottomOf="@+id/editNama"
+        tools:ignore="LabelFor" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtAngkatan"
+        app:layout_constraintTop_toBottomOf="@+id/editNPM">
+
+        <RadioButton
+            android:id="@+id/rb2018"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2018" />
+
+        <RadioButton
+            android:id="@+id/rb2019"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2019" />
+
+        <RadioButton
+            android:id="@+id/rb2020"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2020" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbAcara"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/acara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toEndOf="@+id/txtDivisi"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/cbPDD"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/pdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbAcara" />
+
+    <CheckBox
+        android:id="@+id/cbHumas"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/humas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPDD" />
+
+    <ImageButton
+        android:id="@+id/btnKirim"
+        android:layout_width="84dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="56dp"
+        android:background="#93FD15"
+        android:contentDescription="@string/kirim_data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHumas"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <ImageButton
+        android:id="@+id/btnCancel"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        android:background="#D1CDCD"
+        android:contentDescription="@string/cancel_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnKirim"
+        app:layout_constraintTop_toBottomOf="@+id/cbHumas"
+        app:srcCompat="@android:drawable/ic_delete" />
+</androidx.constraintlayout.widget.ConstraintLayout>
